@@ -54,7 +54,7 @@ def computeDelta(wt, X, Xi):
     for i in range(0, len(Xi.index)):
         Xi_row = Xi.iloc[i][:-1]
         Yi_row = Xi.iloc[i][-1]
-        similarity_dist = similarity_distance(X, Xi_row)
+        similarity_dist = similarity(X, Xi_row)
         numerator += Yi_row * np.exp(wt * similarity_dist)
         denominator += np.exp(wt * similarity_dist)
 
@@ -62,7 +62,7 @@ def computeDelta(wt, X, Xi):
 
     return res
 
-def similarity_distance(X, Xi):
+def similarity(X, Xi):
     M = len(X);
     dist = 0;
     meanX = np.mean(X);
