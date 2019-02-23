@@ -117,11 +117,11 @@ testDeltaP90 = np.empty(0)
 testDeltaP180 = np.empty(0)
 testDeltaP360 = np.empty(0)
 
-for i in xrange(0,len(train1_90.index)) :
+for i in range(0,len(train1_90.index)) :
   testDeltaP90 = np.append(testDeltaP90, computeDelta(weight,test_90.iloc[i],train1_90))
-for i in xrange(0,len(train1_180.index)) :
+for i in range(0,len(train1_180.index)) :
   testDeltaP180 = np.append(testDeltaP180, computeDelta(weight,test_180.iloc[i],train1_180))
-for i in xrange(0,len(train1_360.index)) :
+for i in range(0,len(train1_360.index)) :
   testDeltaP360 = np.append(testDeltaP360, computeDelta(weight,test_360.iloc[i],train1_360))
 
 
