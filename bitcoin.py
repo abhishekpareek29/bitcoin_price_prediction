@@ -149,5 +149,5 @@ compareDF = pd.DataFrame(compare)
 # Compute the MSE and print the result
 # HINT: consider using the sm.mean_squared_error function
 MSE = 0.0
-# YOUR CODE HERE
+MSE = sm.mean_squared_error(compareDF['Actual'], compareDF['Predicted'])
 print("The MSE is %f" % (MSE))
