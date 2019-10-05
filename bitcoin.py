@@ -93,7 +93,7 @@ trainDeltaP = np.asarray(train2_360[['Yi']])
 trainDeltaP = np.reshape(trainDeltaP, -1)
 
 
-# Combine all the training data
+# Combine all the training data.
 d = {'deltaP': trainDeltaP,
      'deltaP90': trainDeltaP90,
      'deltaP180': trainDeltaP180,
